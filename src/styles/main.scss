@@ -46,6 +46,7 @@ path {
     padding-bottom: 20px;
     border: none;
   }
+  position: relative;
 }
 
 .mySwiper {
@@ -161,6 +162,9 @@ $duration: 5s;
     justify-content: center;
     overflow: visible;
     transition: none;
+    // span {
+    //   pointer-events: none;
+    // }
     @media (max-width: 992px) {
       width: 100%;
       height: 100%;
@@ -208,8 +212,6 @@ $duration: 5s;
       display: flex;
       align-items: center;
       justify-content: center;
-      &-active {
-      }
       @media (max-width: 992px) {
         background: #f4f5f9;
       }
@@ -236,6 +238,7 @@ $duration: 5s;
   justify-content: center;
   margin-bottom: 56px;
   margin-top: -125px;
+
   @media (max-width: 992px) {
     height: auto;
     margin-top: 0;
@@ -250,5 +253,24 @@ $duration: 5s;
   @media (max-width: 992px) {
     flex-direction: column-reverse;
     margin-top: 0;
+  }
+}
+.line {
+  position: absolute;
+  background: rgba(66, 86, 122, 0.1);
+
+  &__center {
+    width: 100%;
+    top: 50%;
+    height: 1px;
+  }
+  &__vertical {
+    width: 1px;
+    top: 0;
+    left: 50%;
+    height: 100%;
+  }
+  @media (max-width: 992px) {
+    display: none;
   }
 }

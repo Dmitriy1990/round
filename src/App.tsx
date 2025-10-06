@@ -7,6 +7,7 @@ function App() {
     <div className="wrapper">
       <div className="container">
         <div className="main">
+          <div className="line line__vertical"></div>
           <Heading title="Исторические даты" />
           <Slider />
         </div>

@@ -57,6 +57,8 @@ export default function Slider() {
   return (
     <>
       <div className="animation-wrap">
+        <div className="line line__center"></div>
+
         <Years
           from={data[currentSlide - 1].dates[0].title}
           to={data[currentSlide - 1].dates[data[currentSlide - 1].dates.length - 1].title}
@@ -81,7 +83,7 @@ export default function Slider() {
             allowTouchMove={!isLarge ? true : false}
             slidesPerView={1}
             className="round-swiper"
-            onClick={(s:any) => {
+            onClick={(s: any) => {
               if (s.clickedIndex != null) s.slideTo(s.clickedIndex);
             }}>
             {slides.map((s, i) => (
