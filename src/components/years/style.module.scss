@@ -1,0 +1,26 @@
+.text {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-size: 200px;
+  font-size: clamp(56px, 10vw, 200px);
+  color: #5d5fef;
+  &__pink {
+    color: #ef5da8;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 0px;
+  pointer-events: none;
+  @media (max-width: 992px) {
+    z-index: 200;
+    gap: 30px;
+  }
+}

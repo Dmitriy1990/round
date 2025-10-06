@@ -1,0 +1,27 @@
+.h2 {
+  position: relative;
+  font-size: 56px;
+  font-weight: bold;
+  padding-left: 80px;
+  max-width: calc(353px + 80px);
+  line-height: 120%;
+  color: #42567a;
+  @media (max-width: 767px) {
+    font-size: 20px;
+    max-width: 123px;
+    padding-left: 0;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #2a7b9b;
+    background: linear-gradient(to bottom, #3877ee 0%, #ef5da8 100%);
+    right: calc(100% - 4px);
+    top: 0;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
