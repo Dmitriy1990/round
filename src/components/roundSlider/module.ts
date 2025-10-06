@@ -1,4 +1,5 @@
 import type { Swiper as SwiperInstance } from 'swiper';
+// @ts-ignore
 import type { SwiperEvents } from 'swiper/types';
 import gsap from 'gsap';
 

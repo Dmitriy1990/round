@@ -81,7 +81,7 @@ export default function Slider() {
             allowTouchMove={!isLarge ? true : false}
             slidesPerView={1}
             className="round-swiper"
-            onClick={(s) => {
+            onClick={(s:any) => {
               if (s.clickedIndex != null) s.slideTo(s.clickedIndex);
             }}>
             {slides.map((s, i) => (
