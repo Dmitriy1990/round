@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './style.module.scss';
 import { ArrowIcon } from '../../assets';
@@ -84,4 +84,4 @@ const EventsSlider = ({ data }: Props) => {
   );
 };
 
-export default EventsSlider;
+export default memo(EventsSlider);
